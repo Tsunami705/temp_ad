@@ -1,0 +1,31 @@
+                       type scene  runs  run_collided     t    c   rate
+combo                                                                  
+frontal-0103        frontal  0103    10           1.0   7.1  5.8  0.817
+frontal-0106        frontal  0106    10           0.9   7.4  5.3  0.716
+frontal-0110        frontal  0110    10           1.0  10.3  4.8  0.466
+frontal-0346        frontal  0346    10           1.0   8.3  7.0  0.843
+frontal-0923        frontal  0923    10           1.0   7.7  5.6  0.727
+side-0103              side  0103    10           1.0   6.6  6.0  0.909
+side-0108              side  0108    10           0.2  20.3  9.3  0.458
+side-0110              side  0110    10           1.0   6.3  5.3  0.841
+side-0278              side  0278    10           1.0   5.0  4.0  0.800
+side-0921              side  0921    10           0.0  12.0  0.0  0.000
+stationary-0099  stationary  0099    10           0.1  17.0  2.5  0.147
+stationary-0101  stationary  0101    10           1.0   7.1  6.7  0.944
+stationary-0103  stationary  0103    10           1.0   9.0  6.8  0.756
+stationary-0106  stationary  0106    10           1.0  11.3  5.1  0.451
+stationary-0108  stationary  0108    10           1.0   7.5  6.7  0.893
+stationary-0278  stationary  0278    10           1.0   8.3  6.6  0.795
+stationary-0331  stationary  0331    10           1.0  10.5  7.3  0.695
+stationary-0783  stationary  0783    10           1.0   6.7  6.6  0.985
+stationary-0796  stationary  0796    10           1.0   5.8  5.5  0.948
+stationary-0966  stationary  0966    10           1.0   7.4  6.0  0.811
+20 pairs, 14 scenes, 100 candidate splits
+target 0.1 not feasible; lowest feasible target 0.56
+mode min: target 0.56 +- 0.04 (sets +- 0.2): D = 43, runs per pair 45..88, total 1198
+  train: 688 runs, 6962 timestamps (61.7 %), expected collision share 58.5 %, scenes ['0099', '0103', '0108', '0110', '0331', '0796', '0966']
+  val: 178 runs, 1276 timestamps (11.3 %), expected collision share 76.0 %, scenes ['0278', '0923']
+  test: 332 runs, 3050 timestamps (27.0 %), expected collision share 49.7 %, scenes ['0101', '0106', '0346', '0783', '0921']
+  all: 1198 runs, 11288 timestamps, expected collision share 58.1 %, scenes ['0099', '0101', '0103', '0106', '0108', '0110', '0278', '0331', '0346', '0783', '0796', '0921', '0923', '0966']
+  runs: frontal-0103 45, frontal-0106 45, frontal-0110 67, frontal-0346 64, frontal-0923 88, side-0103 45, side-0108 45, side-0110 45, side-0278 45, side-0921 88, stationary-0099 88, stationary-0101 45, stationary-0103 88, stationary-0106 45, stationary-0108 87, stationary-0278 45, stationary-0331 88, stationary-0783 45, stationary-0796 45, stationary-0966 45
+-> /nobackup/proj/disk/cvls/personal/shipengl/latents/labels/plans_v2/task3_nocol_d0.0.json

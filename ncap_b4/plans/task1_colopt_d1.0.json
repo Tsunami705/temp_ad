@@ -1,0 +1,254 @@
+{
+ "key": "col_n6_d1.0",
+ "target": 0.5,
+ "requested_target": 0.5,
+ "band": 0.04,
+ "set_band": 0.2,
+ "mode": "target",
+ "split": {
+  "0099": "train",
+  "0101": "train",
+  "0103": "train",
+  "0106": "test",
+  "0108": "train",
+  "0110": "val",
+  "0278": "test",
+  "0331": "test",
+  "0346": "train",
+  "0783": "train",
+  "0796": "val",
+  "0921": "train",
+  "0923": "train",
+  "0966": "test"
+ },
+ "runs": {
+  "frontal-0103": 45,
+  "frontal-0106": 45,
+  "frontal-0110": 45,
+  "frontal-0346": 45,
+  "frontal-0923": 45,
+  "side-0103": 45,
+  "side-0108": 83,
+  "side-0110": 45,
+  "side-0278": 45,
+  "side-0921": 83,
+  "stationary-0099": 83,
+  "stationary-0101": 45,
+  "stationary-0103": 45,
+  "stationary-0106": 84,
+  "stationary-0108": 45,
+  "stationary-0278": 45,
+  "stationary-0331": 45,
+  "stationary-0783": 45,
+  "stationary-0796": 45,
+  "stationary-0966": 45
+ },
+ "summary": {
+  "train": {
+   "runs": 609,
+   "timestamps": 7147,
+   "collision_share": 0.48479760455582144,
+   "scenes": [
+    "0099",
+    "0101",
+    "0103",
+    "0108",
+    "0346",
+    "0783",
+    "0921",
+    "0923"
+   ],
+   "timestamp_share": 0.6268748355407421
+  },
+  "val": {
+   "runs": 135,
+   "timestamps": 1048,
+   "collision_share": 0.6995708154506438,
+   "scenes": [
+    "0110",
+    "0796"
+   ],
+   "timestamp_share": 0.09192176124901325
+  },
+  "test": {
+   "runs": 309,
+   "timestamps": 3205,
+   "collision_share": 0.6104455260202171,
+   "scenes": [
+    "0106",
+    "0278",
+    "0331",
+    "0966"
+   ],
+   "timestamp_share": 0.2811156916059995
+  },
+  "all": {
+   "runs": 1053,
+   "timestamps": 11401,
+   "collision_share": 0.5398750942932827,
+   "scenes": [
+    "0099",
+    "0101",
+    "0103",
+    "0106",
+    "0108",
+    "0110",
+    "0278",
+    "0331",
+    "0346",
+    "0783",
+    "0796",
+    "0921",
+    "0923",
+    "0966"
+   ]
+  }
+ },
+ "pilot": {
+  "frontal-0103": {
+   "runs": 10,
+   "t": 8.7,
+   "c": 6.7,
+   "rate": 0.7701
+  },
+  "frontal-0106": {
+   "runs": 10,
+   "t": 8.7,
+   "c": 6.7,
+   "rate": 0.7701
+  },
+  "frontal-0110": {
+   "runs": 10,
+   "t": 9.9,
+   "c": 6.0,
+   "rate": 0.6061
+  },
+  "frontal-0346": {
+   "runs": 10,
+   "t": 8.8,
+   "c": 7.4,
+   "rate": 0.8409
+  },
+  "frontal-0923": {
+   "runs": 10,
+   "t": 8.4,
+   "c": 5.8,
+   "rate": 0.6905
+  },
+  "side-0103": {
+   "runs": 10,
+   "t": 6.7,
+   "c": 6.7,
+   "rate": 1.0
+  },
+  "side-0108": {
+   "runs": 10,
+   "t": 17.8,
+   "c": 6.3,
+   "rate": 0.3539
+  },
+  "side-0110": {
+   "runs": 10,
+   "t": 6.3,
+   "c": 5.3,
+   "rate": 0.8413
+  },
+  "side-0278": {
+   "runs": 10,
+   "t": 5.0,
+   "c": 4.0,
+   "rate": 0.8
+  },
+  "side-0921": {
+   "runs": 10,
+   "t": 12.0,
+   "c": 0.0,
+   "rate": 0.0
+  },
+  "stationary-0099": {
+   "runs": 10,
+   "t": 17.0,
+   "c": 5.3,
+   "rate": 0.3118
+  },
+  "stationary-0101": {
+   "runs": 10,
+   "t": 9.7,
+   "c": 6.4,
+   "rate": 0.6598
+  },
+  "stationary-0103": {
+   "runs": 10,
+   "t": 11.7,
+   "c": 8.0,
+   "rate": 0.6838
+  },
+  "stationary-0106": {
+   "runs": 10,
+   "t": 13.3,
+   "c": 5.4,
+   "rate": 0.406
+  },
+  "stationary-0108": {
+   "runs": 10,
+   "t": 9.6,
+   "c": 6.7,
+   "rate": 0.6979
+  },
+  "stationary-0278": {
+   "runs": 10,
+   "t": 11.3,
+   "c": 7.2,
+   "rate": 0.6372
+  },
+  "stationary-0331": {
+   "runs": 10,
+   "t": 11.1,
+   "c": 7.7,
+   "rate": 0.6937
+  },
+  "stationary-0783": {
+   "runs": 10,
+   "t": 8.9,
+   "c": 7.9,
+   "rate": 0.8876
+  },
+  "stationary-0796": {
+   "runs": 10,
+   "t": 7.1,
+   "c": 5.0,
+   "rate": 0.7042
+  },
+  "stationary-0966": {
+   "runs": 10,
+   "t": 10.3,
+   "c": 7.8,
+   "rate": 0.7573
+  }
+ },
+ "args": {
+  "steps": "/nobackup/proj/disk/cvls/personal/shipengl/latents/labels/colopt_r10_steps20.csv",
+  "key": "col_n6_d1.0",
+  "target": 0.5,
+  "band": 0.04,
+  "min_runs": 45,
+  "max_runs": 400,
+  "max_total": 1200,
+  "ratio": [
+   0.6,
+   0.1,
+   0.3
+  ],
+  "ratio_tol": 0.03,
+  "candidates": 100,
+  "set_bands": [
+   0.08,
+   0.12,
+   0.16,
+   0.2
+  ],
+  "spread": 100.0,
+  "fallback": "min",
+  "out": "/nobackup/proj/disk/cvls/personal/shipengl/latents/labels/plans_v2/task1_colopt_d1.0.json"
+ }
+}

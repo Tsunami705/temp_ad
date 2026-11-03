@@ -283,3 +283,23 @@
     - train scene：0099 0101 0106 0108 0278 0331 0783 0923；val：0110 0796；test：0103 0346 0921 0966。
   - 原因：标签基于优化前的规划，除 0921 外每个组合的逐帧碰撞率都在 26 % 以上，在 ≥ 45 run / 组合的条件下整体压不到 10 %。
 - 生成（开优化，两个任务共用一批 run：每个组合跑两个规划中较大的 run 数，共 1239 个 run；side-0108 从 124 补到 131，合并成一组）：jobs 4856441–4856447（7 个 sbatch），latents `latents/ncap_uniad_colopt_b4/`，NCAP 输出 `neuro-ncap/outputs/2026-11-02_23-00-00/`。
+
+## 2026-11-03：任务 1、3 的训练和评测（B.4 规划的数据集）
+
+- 生成 jobs 4856441–4856447 全部 COMPLETED；1239 个 run，每个组合的 run 数和规划一致。
+- 流水线（run_pipeline.sbatch，SPLIT=plan，标签步数和 δ 取自规划的 key，6 步）：
+  - 任务 1：job 4859348，24 min，OUT `latents/riskmonitor/b4_task1_colopt_d1.0`。
+  - 任务 3：job 4859349，25 min，OUT `latents/riskmonitor/b4_task3_colopt_d0.0`。
+- 实际逐帧碰撞率（整体 / train / val / test）：
+  - 任务 1：54.8 / 48.5 / 70.1 / 63.8 %，样本比例 62.5 / 9.6 / 27.9 %；
+  - 任务 3：44.5 / 43.8 / 62.5 / 38.2 %，样本比例 61.0 / 11.9 / 27.0 %。
+- AUROC：
+  - 任务 1：G 89.1，GMM-4 84.7，GMM 83.0，RBD 82.2，RBD-4 80.7，T 73.5，LP-FCN 56.8，MCD 56.6。
+    - G−T +15.6（p<0.001）；G−RBD +6.9（p=0.12）；G−RBD4 +8.4（p<0.001）。
+  - 任务 3：G 92.8，GMM 90.4，GMM-4 90.3，T 90.0，RBD 83.5，LP-FCN 77.6，RBD-4 76.8，MCD 44.2。
+    - AUROC 配对差全部不显著（只有 4 个 test scene）。
+    - Pr30 / Pr50 上 G 和 RBD 都比 T 高（p<0.001）。
+- 完整表格（含 95% CI、p 值、选中的 epoch）：temp_ad `ncap_b4/RESULTS.md`。
+- 小问题：
+  - 任务 3 中 T 选在 epoch 20（最后一个）。
+  - T 不给无车辆样本打分（原版行为），按最低分计：任务 1 25 个、任务 3 78 个。
